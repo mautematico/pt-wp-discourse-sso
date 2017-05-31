@@ -435,6 +435,7 @@ class WP_Discourse_SSO {
 						'bio' => $current_user->description,
 						'external_id' => $current_user->ID,
 						'avatar_url' => self::get_avatar_url($current_user->ID)
+						'avatar_force_update' => true
 					);
 
 					// Build login string
